@@ -48,7 +48,7 @@ Run the project:
 python manage.py runserver
 ```
 
-| Description | URL |
+| URL| Description |
 | ------ | ------ |
 | / | / swagger /
 | /tokens/create/| POST {'owner': 'input', 'media_url': 'input'} |
