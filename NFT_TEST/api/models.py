@@ -3,8 +3,7 @@ from django.db import models
 
 class Token(models.Model):
     id = models.AutoField(
-        max_length=254,
-        unique=True,
+        primary_key=True,
         verbose_name='Уникальный номер'
     )
     unique_hash = models.CharField(
@@ -12,12 +11,11 @@ class Token(models.Model):
         unique=True,
         verbose_name='Уникальный хэш'
     )
-    tx_hash = models.CharField(
-        max_length=20,
+    tx_hash = models.TextField(
+        unique=True,
         verbose_name='Хэш транзакции создания токена'
     )
     media_url = models.TextField(
-        max_length=20,
         verbose_name='URL с произвольным изображением'
     )
     owner = models.TextField(

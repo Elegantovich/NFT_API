@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+
+  db:
+    #Не реализовал из за невозможности собрать билд в докере."""
+    image: postgres:13.0-alpine
+
+    volumes:
+      - /var/lib/postgresql/data/
+
+    env_file:
+      - ./NFT_TEST/.env
+  web:
+    build: .
+    restart: always
+    ports:
+     - "8000:8000"
+
+    depends_on:
+      - db
+    env_file:
+      - ./NFT_TEST/.env 
