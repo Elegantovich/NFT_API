@@ -50,7 +50,7 @@ python manage.py runserver
 
 | URL| Description |
 | ------ | ------ |
-| / | / swagger /
+| / | start swagger |
 | /tokens/create/| POST {'owner': 'input', 'media_url': 'input'} |
 | /tokens/list/ | GET |
 | /tokens/total_supply/ | GET |
