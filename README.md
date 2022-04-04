@@ -17,9 +17,9 @@ Clone and move to local repository:
 ```
 git clone https://github.com/Elegantovich/NFT_API/
 ```
-Create a virtual environment:
+Create a virtual environment (win):
 ```
-python -m venv venv (win)
+python -m venv venv
 ```
 ```
 cd NFT_TEST
