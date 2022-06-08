@@ -58,4 +58,3 @@ python manage.py runserver
 - [x] Pagination for list of tokens
 - [x] Working with Web3 library
 - [x] Swagger
-- [ ] Docker, docker-compose, PostgreSQL are not implemented due to technical incompatibility
